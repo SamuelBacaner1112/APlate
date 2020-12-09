@@ -1,0 +1,16 @@
+// APlateOutCalc.odl : type library source for APlateOutCalc.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (APlateOutCalc.tlb).
+
+[ uuid(E81B9F39-82E3-4FE2-8300-C09B7C2CFDE2), version(1.0) ]
+library APlateOutCalc
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

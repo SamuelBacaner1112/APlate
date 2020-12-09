@@ -1,0 +1,35 @@
+!MS$FREEFORM
+! Microsoft Developer Studio generated include file.
+! Used by APlateUI.rc
+!
+      integer, parameter :: IDB_RADIOOFF                    = 230
+      integer, parameter :: IDB_CHECKOFF                    = 231
+      integer, parameter :: IDB_RADIOON                     = 232
+      integer, parameter :: IDB_CHECKON                     = 233
+      integer, parameter :: IDB_ITEMS                       = 234
+      integer, parameter :: IDC_OPTION_TREE_LEFT            = 2000
+      integer, parameter :: IDD_OPTIONPAGE_PAINT            = 2000
+      integer, parameter :: IDC_OPTION_TREE_RIGHT           = 2001
+      integer, parameter :: IDC_GRID                        = 3000
+      integer, parameter :: IDC_GRID2                       = 3001
+      integer, parameter :: IDC_OPTION_TREE                 = 5000
+      integer, parameter :: IDD_OPTIONPAGE_GENERAL          = 5001
+      integer, parameter :: IDD_OPTIONPAGE_APLATEGEN        = 5002
+      integer, parameter :: IDD_OPTIONPAGE_GENERAL_DIM      = 5003
+      integer, parameter :: IDD_OPTIONPAGE_DETAIL           = 5004
+      integer, parameter :: IDC_GRID1                       = 5005
+      integer, parameter :: IDD_OPTIONPAGE_DETAIL_DIM       = 5005
+      integer, parameter :: IDD_OPTIONPAGE_SPLICE           = 5006
+      integer, parameter :: IDD_OPTIONPAGE_PLATECROSSBEAM   = 5007
+      integer, parameter :: IDD_OPTIONPAGE_VBRACING         = 5008
+      integer, parameter :: IDD_OPTIONPAGE_BM               = 5009
+      integer, parameter :: IDD_OPTIONPAGE_SHOE             = 5010
+      integer, parameter :: IDD_OPTIONPAGE_HBRACING         = 5011
+      integer, parameter :: IDD_OPTIONPAGE_CAMBER           = 5012
+      integer, parameter :: IDD_OPTIONPAGE_ETCDETAIL        = 5013
+      integer, parameter :: IDD_OPTIONPAGE_WELDMAP          = 5014
+      integer, parameter :: IDD_OPTIONPAGE_PLANGEN          = 5015
+      integer, parameter :: IDD_OPTIONPAGE_LINEINFO         = 5016
+      integer, parameter :: ID_PLATEOPT_LOADBUTTON          = 5017
+      integer, parameter :: ID_PLATEOPT_SAVEBUTTON          = 5018
+      integer, parameter :: ID_PLATEOPT_DEFAULTBUTTON       = 5019

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="APlate.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="APlateDoc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="APlateView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortcutPaneDrawing.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortcutPaneInput.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortcutPaneStart.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitForSubProgram.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WmfSizeDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPTabClientWndInPlate.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APlateDoc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="APlateView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortcutPaneDrawing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortcutPaneInput.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortcutPaneStart.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitForSubProgram.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WmfSizeDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPTabClientWndInPlate.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="APlate.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="APlate.h">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\about.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\APlate.ico">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\APlate.rc2">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\APlate2006.ico">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\APlateDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="APlateSplash.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="APlateSplash_TU.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bitmap_l.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00002.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00003.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00004.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00005.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00006.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp00011.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bmp5.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\drawing.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\idr_apla.ico">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\input_head.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Logo.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\move.cur">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\shortcut_big.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\shortcut_small.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\support.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\tabimage.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\toolbar1.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\toolbar3_GEN.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\toolbar3_TU.bmp">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt">
+      <Filter>리소스 파일</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{764b54c2-312f-46c3-9e5a-67817186964a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{483e858e-887b-43dc-9790-f0baf0425a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{a9a22fd6-6b79-48f3-bc42-a81d258cb07e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

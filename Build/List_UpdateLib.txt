@@ -1,0 +1,16 @@
+Trunk/Build
+Trunk/Dll
+Trunk/DllInclude
+Trunk/LibInclude
+Trunk/Lib/Etc
+Trunk/Lib/XTPToolkitPro
+Trunk/Lib/ASolver
+Trunk/Lib/LibImage_V10
+Trunk/Lib/DWGDirect_V10
+Trunk/Lib/XTPExt
+Trunk/Lib/ShImageMng
+Trunk/Lib/Sqlite
+Trunk/Lib/iconv
+Trunk/Lib/xml
+Trunk/Lib/libpdf
+Trunk/Tool/HGEdit

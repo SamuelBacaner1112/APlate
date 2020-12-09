@@ -1,0 +1,7 @@
+; APlateData.def : Declares the module parameters for the DLL.
+
+LIBRARY      "APlateData"
+;DESCRIPTION  'APlateData Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

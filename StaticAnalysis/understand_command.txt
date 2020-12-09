@@ -1,0 +1,4 @@
+create APlate.udb
+import settings.xml
+
+analyze

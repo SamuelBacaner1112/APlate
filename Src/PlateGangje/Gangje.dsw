@@ -1,0 +1,239 @@
+Microsoft Developer Studio Workspace File, Format Version 5.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ALine"=..\..\..\ALine\ALine.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name LineApp
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ARoad"=..\..\ARoad.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Out
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ARoadData"=..\..\..\ARoadData\ARoadData.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name LineApp
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "BMDD"=..\BMDD\BMDD.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ARoadData
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DBDraw"=..\DBDraw\DBDraw.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name BMDD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DetailDwg"=..\DetailDwg\DetailDwg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SangSe
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DomyunD"=..\..\..\DomyunD\DomyunD.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FactJoin"=..\FactJoin\FactJoin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name DetailDwg
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Gangje"=.\Gangje.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name DBDraw
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Gerneral"=..\Gerneral\Gerneral.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Gangje
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LineApp"=..\..\..\LineApp\LineApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name DomyunD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Out"=..\..\OutDLL\Out\Out.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OutDraw
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "OutDraw"=..\..\OutDLL\OutDraw\OutDraw.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SMT
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SMT"=..\SMT\SMT.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name FactJoin
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SangSe"=..\SangSe\SangSe.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Gerneral
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

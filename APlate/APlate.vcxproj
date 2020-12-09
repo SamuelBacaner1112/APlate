@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{0693C3C5-B57C-E8B5-FF6A-C9A93281A64A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../CommonCompile/Output_v100\</OutDir>
+    <IntDir>.\Release_v100\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>APlate2010</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../CommonCompile/OutputD_v100\</OutDir>
+    <IntDir>.\Debug_v100\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>APlate2010</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../../Engine/BaseEng/Include;../../../LibInclude;../Include;../../../Lib/XTPToolkitPro/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;WNT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release_v100\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release_v100\APlate.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release_v100\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_v100\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm200 </AdditionalOptions>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\../CommonCompile/Output\APlate.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>../../../Lib/XTPToolkitPro/source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>../CommonCompile/Output_v100\APlate.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../CommonCompile/Output_v100/APlate2010.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../Lib;../../../Lib/etc;../../../Lib/ASolver;../../../Lib/sqlite/CommonCompile/Output_v100;../../../Lib/ShImageMng/CommonCompile/Output_v100;../../../Lib/XTPToolkitPro/CommonCompile/Output_v100;../../../Lib/XTPExt/CommonCompile/Output_v100;../../../Dll/ASolverdll;../../../Engine/BaseEng/CommonCompile/Output_v100;../CommonCompile/Output_v100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sx32w.lib;opengl32.lib;glu32.lib;ACommon.lib;Domyun.lib;LineApp.lib;APlateOutCalc.lib;APlateDraw.lib;ARoadConfig.lib;APlateData.lib;APlateUI.lib;PlateGangje.lib;AException.lib;GeneralInput.lib;APlateCalc.lib;htmlhelp.lib;APlateDBDraw.lib;APlateOutBM.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../Engine/BaseEng/Include;../../../LibInclude;../Include;../../../Lib/XTPToolkitPro/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WNT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug_v100\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug_v100\APlate.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug_v100\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_v100\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm200 </AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\../CommonCompile/OutputD\APlate.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>../../../Lib/XTPToolkitPro/source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>../CommonCompile/OutputD_v100\APlate.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../CommonCompile/OutputD_v100/APlate2010.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../Lib/etc;../../../Lib/ASolver;../../../Lib/ShImageMng/CommonCompile/OutputD_v100;../../../Lib/XTPToolkitPro/CommonCompile/OutputD_v100;../../../Lib/XTPExt/CommonCompile/OutputD_v100;../../../Lib/Sqlite/CommonCompile/OutputD_v100;../../../Dll/ASolverDLL;../../../Engine/BaseEng/CommonCompile/OutputD_v100;../CommonCompile/OutputD_v100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sx32w.lib;opengl32.lib;glu32.lib;ACommonD.lib;DomyunD.lib;LineAppD.lib;APlateOutCalcD.lib;APlateDrawD.lib;ARoadConfigD.lib;APlateDataD.lib;APlateUID.lib;PlateGangjeD.lib;AExceptionD.lib;GeneralInputD.lib;APlateCalcD.lib;htmlhelp.lib;APlateDBDrawD.lib;APlateOutBMD.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="APlate.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="APlateDoc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="APlateView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShortcutPaneDrawing.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShortcutPaneInput.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShortcutPaneStart.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="WaitForSubProgram.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="WmfSizeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="XTPTabClientWndInPlate.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="APlate.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="APlate.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo Run WriteBuildDate.exe For Date Version....... 
+"$(SolutionDir)\WriteBuildDate.exe" $(SolutionDir)\..\include\  $(SolutionDir)\..\include\versionNumber.inc $(BUILD_NUMBER) 
+$(SolutionDir)PostBuild_Release_v100.bat </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Engine Copy...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\CommonCompile\Output_v100\Out;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo Run WriteBuildDate.exe For Date Version....... 
+"$(SolutionDir)\WriteBuildDate.exe" $(SolutionDir)\..\include\  $(SolutionDir)\..\include\versionNumber.inc BUILD_NUMBER 
+$(SolutionDir)PostBuild_Debug_v100.bat </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Engine Copy...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\CommonCompile\OutputD_v100\OutD;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="APlateDoc.h" />
+    <ClInclude Include="APlateView.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ShortcutPaneDrawing.h" />
+    <ClInclude Include="ShortcutPaneInput.h" />
+    <ClInclude Include="ShortcutPaneStart.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="WaitForSubProgram.h" />
+    <ClInclude Include="WmfSizeDlg.h" />
+    <ClInclude Include="XTPTabClientWndInPlate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\about.bmp" />
+    <CustomBuild Include="res\APlate.ico" />
+    <CustomBuild Include="res\APlate.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\APlate2006.ico" />
+    <CustomBuild Include="res\APlateDoc.ico" />
+    <CustomBuild Include="APlateSplash.bmp" />
+    <CustomBuild Include="APlateSplash_TU.bmp" />
+    <CustomBuild Include="res\bitmap1.bmp" />
+    <CustomBuild Include="res\bitmap_l.bmp" />
+    <CustomBuild Include="res\bmp00001.bmp" />
+    <CustomBuild Include="res\bmp00002.bmp" />
+    <CustomBuild Include="res\bmp00003.bmp" />
+    <CustomBuild Include="res\bmp00004.bmp" />
+    <CustomBuild Include="res\bmp00005.bmp" />
+    <CustomBuild Include="res\bmp00006.bmp" />
+    <CustomBuild Include="res\bmp00011.bmp" />
+    <CustomBuild Include="res\bmp5.bmp" />
+    <CustomBuild Include="res\drawing.bmp" />
+    <CustomBuild Include="res\idr_apla.ico" />
+    <CustomBuild Include="res\input_head.bmp" />
+    <CustomBuild Include="res\Logo.bmp" />
+    <CustomBuild Include="res\move.cur" />
+    <CustomBuild Include="res\shortcut_big.bmp" />
+    <CustomBuild Include="res\shortcut_small.bmp" />
+    <CustomBuild Include="res\support.bmp" />
+    <CustomBuild Include="res\tabimage.bmp" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="res\toolbar1.bmp" />
+    <CustomBuild Include="res\toolbar3_GEN.bmp" />
+    <CustomBuild Include="res\toolbar3_TU.bmp" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Src\APlateOutBM\APlateOutBM.vcxproj">
+      <Project>{993c6042-6962-45f5-956a-4f44c9e9f2bf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Src\APlateUI\APlateUI.vcxproj">
+      <Project>{9968ab27-e056-b678-0e62-e91207401850}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="APlate.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

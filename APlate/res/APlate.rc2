@@ -1,0 +1,13 @@
+//
+// APLATE.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+// Theme Resource
+#include <Styles/Office2007/Office2007.rc>
+
+// Skin Resource
+#include <SkinFrameWork/Styles/Office2007/Office2007.rc>

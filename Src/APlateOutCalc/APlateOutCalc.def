@@ -1,0 +1,7 @@
+; APlateOutCalc.def : Declares the module parameters for the DLL.
+
+LIBRARY      "APlateOutCalc"
+;DESCRIPTION  'APlateOutCalc Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

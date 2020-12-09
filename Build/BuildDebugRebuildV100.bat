@@ -1,0 +1,11 @@
+call ../../../Build/BuildBaseV100.bat ../APlate APlate.vcxproj Clean Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateData/APlateData.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/PlateGangje/PlateGangje.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateDBDraw/APlateDBDraw.vcxproj  // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateCalc/APlateCalc.vcxproj  // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/GeneralInput/GeneralInput.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateDraw/APlateDraw.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateOutCalc/APlateOutCalc.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateUI/APlateUI.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate ../Src/APlateOutBM/APlateOutBM.vcxproj // Debug
+call ../../../Build/BuildBaseV100.bat ../APlate APlate.vcxproj // Debug

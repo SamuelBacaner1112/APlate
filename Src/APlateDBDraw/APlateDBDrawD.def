@@ -1,0 +1,7 @@
+; APlateDBDraw.def : Declares the module parameters for the DLL.
+
+LIBRARY      "APlateDBDrawD"
+;DESCRIPTION  'APlateDBDrawD Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

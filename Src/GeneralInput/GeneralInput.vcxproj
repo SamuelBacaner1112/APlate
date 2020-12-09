@@ -1,0 +1,1077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{8C32454B-0A75-63D5-B606-30DD4B0D4B26}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../CommonCompile/Output_v100\</OutDir>
+    <IntDir>.\Release_v100\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../CommonCompile/OutputD_v100\</OutDir>
+    <IntDir>.\Debug_v100\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../../../Engine/BaseEng/Include;../../../../LibInclude;../../../../Lib/XTPToolkitPro/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINDLL;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release_v100\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release_v100\GeneralInput.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release_v100\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_v100\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\../../CommonCompile/Output\GeneralInput.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>../../CommonCompile/Output_v100\GeneralInput.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\GeneralInput.def</ModuleDefinitionFile>
+      <OutputFile>../../CommonCompile/Output_v100\GeneralInput.dll</OutputFile>
+      <ImportLibrary>../../CommonCompile/Output_v100\GeneralInput.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>../../../../Lib;../../../../Lib/etc;../../../../Lib/ASolver;../../../../Lib/sqlite/CommonCompile/Output_v100;../../../../Lib/ShImageMng/CommonCompile/Output_v100;../../../../Lib/XTPToolkitPro/CommonCompile/Output_v100;../../../../Lib/XTPExt/CommonCompile/Output_v100;../../../../Dll/ASolverDLL;../../../../Engine/BaseEng/CommonCompile/Output_v100;../../CommonCompile/Output_v100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ARoadConfig.lib;APlateData.lib;LineApp.lib;ShGrid.lib;PlateGangje.lib;APlateCalc.lib;XLReport.lib;AException.lib;APlateDBDraw.lib;BearingInfo.lib;libintl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../../../Engine/BaseEng/Include;../../../../LibInclude;../../../../Lib/XTPToolkitPro/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINDLL;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug_v100\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug_v100\GeneralInput.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug_v100\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_v100\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm200 </AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\../../CommonCompile/OutputD\GeneralInput.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>../../../../Lib/XTPToolkitPro/source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>../../CommonCompile/OutputD_v100\GeneralInput.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\GeneralInputD.def</ModuleDefinitionFile>
+      <OutputFile>../../CommonCompile/OutputD_v100/GeneralInputD.dll</OutputFile>
+      <ImportLibrary>../../CommonCompile/OutputD_v100\GeneralInputD.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>../../../../Lib;../../../../Lib/etc;../../../../Lib/ASolver;../../../../Dll/ASolverDLL;../../../../Lib/sqlite/CommonCompile/OutputD_v100;../../../../Lib/ShImageMng/CommonCompile/OutputD_v100;../../../../Lib/XTPToolkitPro/CommonCompile/OutputD_v100;../../../../Lib/XTPExt/CommonCompile/OutputD_v100;../../../../Engine/BaseEng/CommonCompile/OutputD_v100;../../CommonCompile/OutputD_v100;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>XLReportD.lib;ARoadConfigD.lib;APlateDataD.lib;LineAppD.lib;ShGridD.lib;PlateGangjeD.lib;APlateCalcD.lib;AExceptionD.lib;APlateDBDrawD.lib;BearingInfoD.lib;libintl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbutPierDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BaseInfoDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BindConcJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BMOutSangPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BMOutSheet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ByunDanmyunJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverDeadLoad.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverDroop.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverLoadCombo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverLoadDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverModeling.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverModelResult.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverRebarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcCantileverSetup.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcDisplacement.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcFatigue.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcFloorSlabStress.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcFrameComboLoadDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcInfluenceK.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcLossOfPrestress.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcModelingFramePropty.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcModelingResult.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcModelingSetup.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcSecForceDivCalc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcSecForceDivResult.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcSecOutline.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcSecStress.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcSecStressPos.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcSectionConceptDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcUltimateLoadDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcWarping.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcWeld.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CalcWindForce.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CrossBeamSubInputDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DanmyunTypeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckBasicDataDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckBindConcRebarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckBMOptionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckCrossStringerDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDetailCyclesuDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDetailDivideRebar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDetailMainLowerCenterDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDetailMainLowerDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDetailMainUpperDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDetailSettlementDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDistriRebarCTCDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDistriRebarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckEtcRebarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckGuardFenceDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckMainRebarCTCDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckMainRebarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckMainSkewRebarCTCDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckPlanRebarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckRebarInfoDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckRebarJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckSabogangCTCDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignBaseDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignBMPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignBoltPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignConcretePage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignCSteelPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignCTSteelPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignDeductPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignFrictionCoeffPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignGradePage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignHSteelPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignISteelPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignLSteelPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignLVarSteelPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignMaterialPropertyPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignPageDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignPrestressPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignPrestressPropertyPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignScallopPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignSpecialMovingLoad.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignSteelDimPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignSteelMaterialPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignStudPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignUWeightPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DesignWeldPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetBracketDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetBracketStiffDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetCamberJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetCrossBeamTypeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetDanTaperDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetEtcInputDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetFieldJoinDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetHBracing.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetHBracingScallop.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetHStiffDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetLiftLugDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetPlateWShiftDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetSHConnectorVPosDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetSlabAnchor.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetSolePlateDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetStagingRingDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetVBracingTypeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetVStiffJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DetWebHStiffPosDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DialogInstallBeryukAtBlockout.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DialogInstallMainAtBlockout.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="EarthQuackDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="EarthQuackFactDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="EarthQUackGradeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ExpansionJointTypeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="FactJoinPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="FieldJoinPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="FileProgressDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="GeneralBaseDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="GeneralBaseStd.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="GeneralInput.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="GirHeightUserDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="GuardFenceTypeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="HBracingPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="HBrSpStdInputDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="HDanDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JackupPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JackupSolePlateDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JiganGusengDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JijumAngleDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JijumStiffDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JointRestraintDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="JRibPosition.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="labelcontrol.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PaintOutAssembly.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PaintOutSheet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="picture.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PlateStressOut.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="RebarAddRateDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ReDir.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Redirect.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ResultDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="RistModule.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SelectLineDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SelGirderHeightRangeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShCheckButton.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShearBarTypeDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShellFileOp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShoeSelectDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShoeZapyoDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SlabJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SlabStructureDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SpliceBoltPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SpliceDesignResult.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="StackDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="StartPointJewonDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SubCrossHeightRistDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SubInputTensionBarDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SubRistRefImgDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SubSlabHunchInputDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="TotalViewDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UserDesignCheckDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="VBracingPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="VStiffPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="VStiffStdInputDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="WeldOutAssembly.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="WeldOutSheet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /Zm200   /Zm200 </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GeneralInput.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="res\bitmap1.bmp" />
+    <CustomBuild Include="res\bitmap5.bmp" />
+    <CustomBuild Include="res\bitmap6.bmp" />
+    <CustomBuild Include="res\bitmap7.bmp" />
+    <CustomBuild Include="res\bitmap8.bmp" />
+    <CustomBuild Include="res\bitmap_apply.bmp" />
+    <CustomBuild Include="res\bitmap_b.bmp" />
+    <CustomBuild Include="res\bitmap_bracingtype.bmp" />
+    <CustomBuild Include="res\bitmap_byuntype1.bmp" />
+    <CustomBuild Include="res\bitmap_byuntype2.bmp" />
+    <CustomBuild Include="res\bitmap_byuntype3.bmp" />
+    <CustomBuild Include="res\bitmap_byuntype4.bmp" />
+    <CustomBuild Include="res\bitmap_c.bmp" />
+    <CustomBuild Include="res\bitmap_g.bmp" />
+    <CustomBuild Include="res\bitmap_h.bmp" />
+    <CustomBuild Include="res\bitmap_hBracing.bmp" />
+    <CustomBuild Include="res\bitmap_hisNext.bmp" />
+    <CustomBuild Include="res\bitmap_hisNextNo.bmp" />
+    <CustomBuild Include="res\bitmap_hisPrev.bmp" />
+    <CustomBuild Include="res\bitmap_hisPrevNo.bmp" />
+    <CustomBuild Include="res\bitmap_install_beryuk.bmp" />
+    <CustomBuild Include="res\bitmap_install_main.bmp" />
+    <CustomBuild Include="res\bitmap_j.bmp" />
+    <CustomBuild Include="res\bitmap_k.bmp" />
+    <CustomBuild Include="res\bitmap_next.bmp" />
+    <CustomBuild Include="res\bitmap_nextall.bmp" />
+    <CustomBuild Include="res\bitmap_pin.bmp" />
+    <CustomBuild Include="res\bitmap_pin1.bmp" />
+    <CustomBuild Include="res\bitmap_pos.bmp" />
+    <CustomBuild Include="res\bitmap_prev.bmp" />
+    <CustomBuild Include="res\bitmap_prevall.bmp" />
+    <CustomBuild Include="res\bitmap_recommand.bmp" />
+    <CustomBuild Include="res\bitmap_treebar.bmp" />
+    <CustomBuild Include="res\bitmap_uninstall_beryuk.bmp" />
+    <CustomBuild Include="res\bitmap_uninstall_main.bmp" />
+    <CustomBuild Include="res\bitmap_w.bmp" />
+    <CustomBuild Include="res\bmp00001.bmp" />
+    <CustomBuild Include="res\bmp00002.bmp" />
+    <CustomBuild Include="res\bmp_FactJoint.bmp" />
+    <CustomBuild Include="res\bmp_GirderHeight.bmp" />
+    <CustomBuild Include="res\bmp_GirderRate.bmp" />
+    <CustomBuild Include="res\bmp_HBracing.bmp" />
+    <CustomBuild Include="res\bmp_JiJumAngle.bmp" />
+    <CustomBuild Include="res\bmp_RIST.bmp" />
+    <CustomBuild Include="res\bmp_SttEndI1.bmp" />
+    <CustomBuild Include="res\bmp_SttEndI2.bmp" />
+    <CustomBuild Include="res\bmp_SttEndI3.bmp" />
+    <CustomBuild Include="res\checkoff.bmp" />
+    <CustomBuild Include="res\checkon.bmp" />
+    <CustomBuild Include="res\CompressStress.bmp" />
+    <CustomBuild Include="res\GeneralInput.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\girht1_down.bmp" />
+    <CustomBuild Include="res\girht2_down.bmp" />
+    <CustomBuild Include="res\girht3_down.bmp" />
+    <CustomBuild Include="res\girht4_down.bmp" />
+    <CustomBuild Include="res\girhtra1.bmp" />
+    <CustomBuild Include="res\girhtra2.bmp" />
+    <CustomBuild Include="res\girhtra3.bmp" />
+    <CustomBuild Include="res\girhtra4.bmp" />
+    <CustomBuild Include="res\Guard1.bmp" />
+    <CustomBuild Include="res\Guard2.bmp" />
+    <CustomBuild Include="res\Guard3.bmp" />
+    <CustomBuild Include="res\Guard4.bmp" />
+    <CustomBuild Include="res\Guard5.bmp" />
+    <CustomBuild Include="res\Guard6.bmp" />
+    <CustomBuild Include="res\Guard7.bmp" />
+    <CustomBuild Include="res\ShearBar1.bmp" />
+    <CustomBuild Include="res\ShearBar2.bmp" />
+    <CustomBuild Include="res\ShearBar3.bmp" />
+    <CustomBuild Include="res\ShearButtonD.bmp" />
+    <CustomBuild Include="res\ShearButtonU.bmp" />
+    <CustomBuild Include="res\ShearStress1.bmp" />
+    <CustomBuild Include="res\ShearStress2.bmp" />
+    <CustomBuild Include="res\tank.bmp" />
+    <CustomBuild Include="res\TensionStress.bmp" />
+    <CustomBuild Include="res\toolbar_.bmp" />
+    <CustomBuild Include="res\trailer.bmp" />
+    <CustomBuild Include="res\TREE_MENU.bmp" />
+    <CustomBuild Include="res\가까운헌치부.bmp" />
+    <CustomBuild Include="res\기역배치-dn.bmp" />
+    <CustomBuild Include="res\기역배치.bmp" />
+    <CustomBuild Include="res\먼헌치부.bmp" />
+    <CustomBuild Include="res\분리배치.bmp" />
+    <CustomBuild Include="res\상단부정착장.bmp" />
+    <CustomBuild Include="res\전체배치.bmp" />
+    <CustomBuild Include="res\중앙부배치.bmp" />
+    <CustomBuild Include="res\중앙부배치01.bmp" />
+    <CustomBuild Include="res\중앙부배치02.bmp" />
+    <CustomBuild Include="res\직선배치.bmp" />
+    <CustomBuild Include="res\하단부정착장.bmp" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GeneralInput.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbutPierDlg.h" />
+    <ClInclude Include="BaseInfoDlg.h" />
+    <ClInclude Include="BindConcJewonDlg.h" />
+    <ClInclude Include="BMOutSangPage.h" />
+    <ClInclude Include="BMOutSheet.h" />
+    <ClInclude Include="ByunDanmyunJewonDlg.h" />
+    <ClInclude Include="CalcCantileverDeadLoad.h" />
+    <ClInclude Include="CalcCantileverDroop.h" />
+    <ClInclude Include="CalcCantileverLoadCombo.h" />
+    <ClInclude Include="CalcCantileverLoadDlg.h" />
+    <ClInclude Include="CalcCantileverModeling.h" />
+    <ClInclude Include="CalcCantileverModelResult.h" />
+    <ClInclude Include="CalcCantileverRebarDlg.h" />
+    <ClInclude Include="CalcCantileverSetup.h" />
+    <ClInclude Include="CalcDisplacement.h" />
+    <ClInclude Include="CalcFatigue.h" />
+    <ClInclude Include="CalcFloorSlabStress.h" />
+    <ClInclude Include="CalcFrameComboLoadDlg.h" />
+    <ClInclude Include="CalcInfluenceK.h" />
+    <ClInclude Include="CalcLossOfPrestress.h" />
+    <ClInclude Include="CalcModelingFramePropty.h" />
+    <ClInclude Include="CalcModelingResult.h" />
+    <ClInclude Include="CalcModelingSetup.h" />
+    <ClInclude Include="CalcSecForceDivCalc.h" />
+    <ClInclude Include="CalcSecForceDivResult.h" />
+    <ClInclude Include="CalcSecOutline.h" />
+    <ClInclude Include="CalcSecStress.h" />
+    <ClInclude Include="CalcSecStressPos.h" />
+    <ClInclude Include="CalcSectionConceptDlg.h" />
+    <ClInclude Include="CalcUltimateLoadDlg.h" />
+    <ClInclude Include="CalcWarping.h" />
+    <ClInclude Include="CalcWeld.h" />
+    <ClInclude Include="CalcWindForce.h" />
+    <ClInclude Include="CrossBeamSubInputDlg.h" />
+    <ClInclude Include="DanmyunTypeDlg.h" />
+    <ClInclude Include="DeckBasicDataDlg.h" />
+    <ClInclude Include="DeckBindConcRebarDlg.h" />
+    <ClInclude Include="DeckBMOptionDlg.h" />
+    <ClInclude Include="DeckCrossStringerDlg.h" />
+    <ClInclude Include="DeckDetailCyclesuDlg.h" />
+    <ClInclude Include="DeckDetailDivideRebar.h" />
+    <ClInclude Include="DeckDetailMainLowerCenterDlg.h" />
+    <ClInclude Include="DeckDetailMainLowerDlg.h" />
+    <ClInclude Include="DeckDetailMainUpperDlg.h" />
+    <ClInclude Include="DeckDetailSettlementDlg.h" />
+    <ClInclude Include="DeckDistriRebarCTCDlg.h" />
+    <ClInclude Include="DeckDistriRebarDlg.h" />
+    <ClInclude Include="DeckEtcRebarDlg.h" />
+    <ClInclude Include="DeckGuardFenceDlg.h" />
+    <ClInclude Include="DeckMainRebarCTCDlg.h" />
+    <ClInclude Include="DeckMainRebarDlg.h" />
+    <ClInclude Include="DeckMainSkewRebarCTCDlg.h" />
+    <ClInclude Include="DeckPlanRebarDlg.h" />
+    <ClInclude Include="DeckRebarInfoDlg.h" />
+    <ClInclude Include="DeckRebarJewonDlg.h" />
+    <ClInclude Include="DeckSabogangCTCDlg.h" />
+    <ClInclude Include="DesignBaseDlg.h" />
+    <ClInclude Include="DesignBMPage.h" />
+    <ClInclude Include="DesignBoltPage.h" />
+    <ClInclude Include="DesignConcretePage.h" />
+    <ClInclude Include="DesignCSteelPage.h" />
+    <ClInclude Include="DesignCTSteelPage.h" />
+    <ClInclude Include="DesignDeductPage.h" />
+    <ClInclude Include="DesignFrictionCoeffPage.h" />
+    <ClInclude Include="DesignGradePage.h" />
+    <ClInclude Include="DesignHSteelPage.h" />
+    <ClInclude Include="DesignISteelPage.h" />
+    <ClInclude Include="DesignLSteelPage.h" />
+    <ClInclude Include="DesignLVarSteelPage.h" />
+    <ClInclude Include="DesignMaterialPropertyPage.h" />
+    <ClInclude Include="DesignPage.h" />
+    <ClInclude Include="DesignPageDlg.h" />
+    <ClInclude Include="DesignPrestressPage.h" />
+    <ClInclude Include="DesignPrestressPropertyPage.h" />
+    <ClInclude Include="DesignScallopPage.h" />
+    <ClInclude Include="DesignSpecialMovingLoad.h" />
+    <ClInclude Include="DesignSteelDimPage.h" />
+    <ClInclude Include="DesignSteelMaterialPage.h" />
+    <ClInclude Include="DesignStudPage.h" />
+    <ClInclude Include="DesignUWeightPage.h" />
+    <ClInclude Include="DesignWeldPage.h" />
+    <ClInclude Include="DetBracketDlg.h" />
+    <ClInclude Include="DetBracketStiffDlg.h" />
+    <ClInclude Include="DetCamberJewonDlg.h" />
+    <ClInclude Include="DetCrossBeamTypeDlg.h" />
+    <ClInclude Include="DetDanTaperDlg.h" />
+    <ClInclude Include="DetEtcInputDlg.h" />
+    <ClInclude Include="DetFieldJoinDlg.h" />
+    <ClInclude Include="DetHBracing.h" />
+    <ClInclude Include="DetHBracingScallop.h" />
+    <ClInclude Include="DetHStiffDlg.h" />
+    <ClInclude Include="DetLiftLugDlg.h" />
+    <ClInclude Include="DetPlateWShiftDlg.h" />
+    <ClInclude Include="DetSHConnectorVPosDlg.h" />
+    <ClInclude Include="DetSlabAnchor.h" />
+    <ClInclude Include="DetSolePlateDlg.h" />
+    <ClInclude Include="DetStagingRingDlg.h" />
+    <ClInclude Include="DetVBracingTypeDlg.h" />
+    <ClInclude Include="DetVStiffJewonDlg.h" />
+    <ClInclude Include="DetWebHStiffPosDlg.h" />
+    <ClInclude Include="DialogInstallBeryukAtBlockout.h" />
+    <ClInclude Include="DialogInstallMainAtBlockout.h" />
+    <ClInclude Include="EarthQuackDlg.h" />
+    <ClInclude Include="EarthQuackFactDlg.h" />
+    <ClInclude Include="EarthQUackGradeDlg.h" />
+    <ClInclude Include="ExpansionJointTypeDlg.h" />
+    <ClInclude Include="FactJoinPositionDlg.h" />
+    <ClInclude Include="FieldJoinPositionDlg.h" />
+    <ClInclude Include="FileProgressDlg.h" />
+    <ClInclude Include="GeneralBaseDlg.h" />
+    <ClInclude Include="GeneralBaseStd.h" />
+    <ClInclude Include="GeneralInput.h" />
+    <ClInclude Include="GirHeightUserDlg.h" />
+    <ClInclude Include="GuardFenceTypeDlg.h" />
+    <ClInclude Include="HBracingPositionDlg.h" />
+    <ClInclude Include="HBrSpStdInputDlg.h" />
+    <ClInclude Include="HDanDlg.h" />
+    <ClInclude Include="JackupPositionDlg.h" />
+    <ClInclude Include="JackupSolePlateDlg.h" />
+    <ClInclude Include="JiganGusengDlg.h" />
+    <ClInclude Include="JijumAngleDlg.h" />
+    <ClInclude Include="JijumStiffDlg.h" />
+    <ClInclude Include="JointRestraintDlg.h" />
+    <ClInclude Include="JRibPosition.h" />
+    <ClInclude Include="labelcontrol.h" />
+    <ClInclude Include="PaintOutAssembly.h" />
+    <ClInclude Include="PaintOutSheet.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="PlateStressOut.h" />
+    <ClInclude Include="RebarAddRateDlg.h" />
+    <ClInclude Include="ReDir.h" />
+    <ClInclude Include="Redirect.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResultDlg.h" />
+    <ClInclude Include="RistModule.h" />
+    <ClInclude Include="SelectLineDlg.h" />
+    <ClInclude Include="SelGirderHeightRangeDlg.h" />
+    <ClInclude Include="ShCheckButton.h" />
+    <ClInclude Include="ShearBarTypeDlg.h" />
+    <ClInclude Include="ShellFileOp.h" />
+    <ClInclude Include="ShoeSelectDlg.h" />
+    <ClInclude Include="ShoeZapyoDlg.h" />
+    <ClInclude Include="SlabJewonDlg.h" />
+    <ClInclude Include="SlabStructureDlg.h" />
+    <ClInclude Include="SpliceBoltPositionDlg.h" />
+    <ClInclude Include="SpliceDesignResult.h" />
+    <ClInclude Include="StackDialog.h" />
+    <ClInclude Include="StartPointJewonDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SubCrossHeightRistDlg.h" />
+    <ClInclude Include="SubInputTensionBarDlg.h" />
+    <ClInclude Include="SubRistRefImgDlg.h" />
+    <ClInclude Include="SubSlabHunchInputDlg.h" />
+    <ClInclude Include="TotalViewDlg.h" />
+    <ClInclude Include="UserDesignCheckDlg.h" />
+    <ClInclude Include="VBracingPositionDlg.h" />
+    <ClInclude Include="VStiffPositionDlg.h" />
+    <ClInclude Include="VStiffStdInputDlg.h" />
+    <ClInclude Include="WeldOutAssembly.h" />
+    <ClInclude Include="WeldOutSheet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APlateCalc\APlateCalc.vcxproj">
+      <Project>{b3ba9925-4e5e-8124-1811-27fbc36378bb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GeneralInput.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

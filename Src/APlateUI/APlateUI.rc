@@ -1,0 +1,439 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\APlateUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "APlateUI DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "APlateUI\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "APlateUI.DLL\0"
+            VALUE "ProductName", "APlateUI 동적 연결 라이브러리\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONPAGE_GENERAL DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "거더 일반도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_APLATEGEN DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "일반사항"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,0,2,175,
+                    297
+    CONTROL         "Custom1",IDC_GRID1_UI,"MFCGridCtrl",WS_BORDER,176,2,175,
+                    147
+    CONTROL         "Custom1",IDC_GRID2_UI,"MFCGridCtrl",WS_BORDER,176,152,
+                    175,147
+END
+
+IDD_OPTIONPAGE_GENERAL_DIM DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "일반도 치수선"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE_LEFT,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    WS_BORDER | WS_TABSTOP,0,0,175,299
+    CONTROL         "Tree1",IDC_OPTION_TREE_RIGHT,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    WS_BORDER | WS_TABSTOP,175,0,175,299
+END
+
+IDD_OPTIONPAGE_DETAIL DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "거더 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_DETAIL_DIM DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "상세도 치수선"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE_LEFT,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    WS_BORDER | WS_TABSTOP,0,0,175,299
+    CONTROL         "Tree1",IDC_OPTION_TREE_RIGHT,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    WS_BORDER | WS_TABSTOP,175,0,175,299
+END
+
+IDD_OPTIONPAGE_SPLICE DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "현장이음 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_PLATECROSSBEAM DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "가로보 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_VBRACING DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "수직브레이싱 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_BM DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "강재 집계표"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_SHOE DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "교량받침 배치도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_HBRACING DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "수평브레이싱 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_CAMBER DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "솟음도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_ETCDETAIL DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "기타 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_PLANGEN DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "일반 평면도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_LINEINFO DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "선형 제원도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_PAINT DIALOG DISCARDABLE  0, 0, 351, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "도장 상세도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_SLABGEN DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "슬래브 일반도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,175,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_TENDON DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TENDON 배치도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,175,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_DECKREBAR DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "슬래브 배근도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree2",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom2",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_SUMMARY DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "요약도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree2",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,176,0,175,
+                    299
+END
+
+IDD_OPTIONPAGE_TUGIRDER DIALOG DISCARDABLE  0, 0, 351, 299
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TurnOver거더 배근도"
+FONT 9, "굴림"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTION_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    0,0,175,299
+    CONTROL         "Custom1",IDC_GRID_UI,"MFCGridCtrl",WS_BORDER,175,0,175,
+                    299
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RADIOON             BITMAP  DISCARDABLE     "res\\bmp00008.bmp"
+IDB_RADIOOFF            BITMAP  DISCARDABLE     "res\\bmp00009.bmp"
+IDB_ITEMS               BITMAP  DISCARDABLE     "res\\bmp00011.bmp"
+IDB_CHECKON             BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_CHECKOFF            BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPTIONPAGE_PAINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_OPTIONPAGE_TENDON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_OPTIONPAGE_SUMMARY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 350
+    END
+
+    IDD_OPTIONPAGE_TUGIRDER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 350
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\APlateUI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

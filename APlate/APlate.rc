@@ -1,0 +1,1413 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\APlate.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TABIMAGES           BITMAP                  "res\\tabimage.bmp"
+IDB_SPLASH_TU           BITMAP                  "APlateSplash_TU.bmp"
+IDB_SPLASH              BITMAP                  "APlateSplash.bmp"
+IDB_ITEMS_TOOL          BITMAP                  "res\\bmp00011.bmp"
+IDB_BITMAP_UNUSE        BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP_LOGO_2       BITMAP                  "res\\bitmap_l.bmp"
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+IDB_BITMAP_ABOUT        BITMAP                  "res\\about.bmp"
+IDR_TOOLBAR_ZOOM        BITMAP                  "res\\bmp00002.bmp"
+IDR_TOOLBAR_PROP        BITMAP                  "res\\bmp5.bmp"
+IDR_TOOLBAR_OSNAP       BITMAP                  "res\\bmp00003.bmp"
+IDR_TOOLBAR_GENINPUT    BITMAP                  "res\\bmp00004.bmp"
+IDR_TOOLBAR_DOMYUN      BITMAP                  "res\\bmp00001.bmp"
+IDR_TOOLBAR_DETINPUT    BITMAP                  "res\\bmp00005.bmp"
+IDR_TOOLBAR_DECK_TU     BITMAP                  "res\\toolbar3_TU.bmp"
+IDR_TOOLBAR_DECK_GEN    BITMAP                  "res\\toolbar3_GEN.bmp"
+IDR_TOOLBAR_ALIGN       BITMAP                  "res\\bmp00006.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_SUPPORT      BITMAP                  "res\\support.bmp"
+IDB_BITMAP_SHORTCUTS_SMALL BITMAP                  "res\\shortcut_small.bmp"
+IDB_BITMAP_SHORTCUTS_BIG BITMAP                  "res\\shortcut_big.bmp"
+IDB_BITMAP_INPUT_HEAD   BITMAP                  "res\\input_head.bmp"
+IDB_BITMAP_DRAWING      BITMAP                  "res\\drawing.bmp"
+IDR_TOOLBAR_CALCINPUT   BITMAP                  "res\\toolbar1.bmp"
+IDR_TOOLBAR_LINE		PNG						"res\\toolbar_line.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_HARDWAREINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DIALOG_WAITFORALINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DIALOG_WMFSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 165
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_APLATETYPE_FULL ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_APLATE_FILE_NEW,     VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_AIRIALVIEW,          VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_MOVE_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_MOVE_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MOVE                CURSOR                  "res\\move.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HARDWAREINFO_DIALOG DIALOG 0, 0, 255, 315
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "시스템 하드웨어 정보"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "확 인",IDOK,195,290,50,14
+    CTEXT           "시스템 하드웨어 정보",IDC_STATIC,59,8,139,8
+    LTEXT           "Processor : ",IDC_STATIC,13,24,38,8
+    LTEXT           "Number of processors:",IDC_STATIC,13,37,72,8
+    LTEXT           "OEM Id:",IDC_STATIC,13,141,27,8
+    LTEXT           "Page size:",IDC_STATIC,13,154,34,8
+    LTEXT           "Minimum application address:",IDC_STATIC,13,115,93,8
+    LTEXT           "Maximum application address:",IDC_STATIC,13,128,95,8
+    LTEXT           "Active processor mask:",IDC_STATIC,13,76,74,8
+    LTEXT           "Processor level:",IDC_STATIC,13,89,51,8
+    LTEXT           "Processor revision:",IDC_STATIC,13,102,60,8
+    LTEXT           "Static",IDC_PROTYPE_STATIC,141,24,102,8
+    LTEXT           "Static",IDC_NUMPRO_STATIC,141,37,102,8
+    LTEXT           "Static",IDC_PROMASK_STATIC,141,76,102,8
+    LTEXT           "Static",IDC_PROLEVEL_STATIC,141,89,102,8
+    LTEXT           "Static",IDC_PROREV_STATIC,141,102,102,8
+    LTEXT           "Static",IDC_MINADRS_STATIC,141,115,102,8
+    LTEXT           "Static",IDC_MAXADRS_STATIC,141,128,102,8
+    LTEXT           "Static",IDC_OEMID_STATIC,141,141,102,8
+    LTEXT           "Static",IDC_PAGESIZE_STATIC,141,154,102,8
+    LTEXT           "Processor architecture:",IDC_STATIC,13,50,74,8
+    LTEXT           "Static",IDC_PROARCH_STATIC,141,50,102,8
+    GROUPBOX        "",IDC_STATIC,7,17,240,163
+    GROUPBOX        "Mouse Information",IDC_STATIC,7,241,240,46
+    LTEXT           "Mouse",IDC_STATIC,13,251,22,8
+    LTEXT           "Buttons swaaped",IDC_STATIC,13,263,70,8
+    LTEXT           "Static",IDC_MOUSE_STATIC,141,251,93,8
+    LTEXT           "Static",IDC_SWAPPED_STATIC,141,262,93,8
+    LTEXT           "Mouse Speed:",IDC_STATIC,13,276,47,8
+    LTEXT           "Static",IDC_SPEED_STATIC,141,275,93,8
+    LTEXT           "Processor Speed:",IDC_STATIC,13,63,57,8
+    LTEXT           "Static",IDC_CPUSPEED_STATIC,141,63,102,8
+    LTEXT           "CPU Manufacturer:",IDC_STATIC,13,167,62,8
+    LTEXT           "Static",IDC_VENDOR_STATIC,141,167,102,8
+    GROUPBOX        "Memory Status",IDC_STATIC,7,183,240,56
+    LTEXT           "Memory Used:",IDC_STATIC,13,193,46,8
+    LTEXT           "Static",IDC_MEMORYUSE_STATIC,141,193,102,8
+    LTEXT           "Physical Memory Installed:",IDC_STATIC,13,205,84,8
+    LTEXT           "Static",IDC_PHYMEM_STATIC,141,205,102,8
+    LTEXT           "Total Virtual Memory:",IDC_STATIC,13,229,67,8
+    LTEXT           "Static",IDC_VIRTUALMEM_STATIC,141,229,102,8
+    LTEXT           "Physical Memory Available:",IDC_STATIC,13,217,86,8
+    LTEXT           "Static",IDC_PHYMEMAVAIL_STATIC,141,217,102,8
+END
+
+IDD_DIALOG_WAITFORALINE DIALOG 0, 0, 163, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "ALINE 프로그램 종료 대기"
+FONT 9, "굴림"
+BEGIN
+    PUSHBUTTON      "취 소",IDCANCEL,57,47,50,16
+    LTEXT           "ALine 프로그램과 연결중입니다.\n\n연결을 중지하시려면 [취소] 버튼을 클릭하세요.",IDC_STATIC,6,13,150,30
+    GROUPBOX        "",IDC_STATIC,2,0,159,69
+END
+
+IDD_DIALOG_WMFSIZE DIALOG 0, 0, 170, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WMF 이미지 크기"
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_EDIT_WMFWIDTH,56,16,42,14,ES_RIGHT
+    EDITTEXT        IDC_EDIT_WMFHEIGHT,56,33,42,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "최대 폭, 높이에 따라 높이 맞춤",IDC_CHECK_AUTOSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,56,105,10
+    DEFPUSHBUTTON   "확 인",IDOK,115,4,50,15
+    PUSHBUTTON      "취 소",IDCANCEL,115,21,50,15
+    GROUPBOX        "크기",IDC_STATIC,5,4,105,48
+    LTEXT           "가로:",IDC_STATIC,16,19,16,9
+    LTEXT           "세로:",IDC_STATIC,16,36,16,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\APlate2006.ico"
+IDR_APLATETYPE_FULL     ICON                    "res\\idr_apla.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_UNDO MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "<dummy>",                     ID_MOVE_UNDO_DUMMY
+    END
+END
+
+IDR_REDO MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "<dummy>",                     ID_MOVE_REDO_DUMMY
+    END
+END
+
+IDR_POPUP_ZOOM MENU
+BEGIN
+    POPUP "Zoom"
+    BEGIN
+        MENUITEM "&All",                        ID_ZOOM_ALL
+        MENUITEM "&Window",                     ID_ZOOM_WINDOW
+        MENUITEM "&Dynaymic",                   ID_ZOOM_DYNAMIC
+        MENUITEM "&In",                         ID_ZOOM_IN
+        MENUITEM "&Out",                        ID_ZOOM_OUT
+        MENUITEM "&Move",                       ID_ZOOM_MOVE
+        MENUITEM "&Realtime",                   ID_ZOOM_REALTIME
+        MENUITEM "&Previous",                   ID_ZOOM_PREVIOUS
+        MENUITEM SEPARATOR
+        MENUITEM "현재화면을 D&xf File로저장",          ID_DXF_OUT_CUR
+    END
+END
+
+IDR_POPUP_TOOLBAR MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "일반 도구모음(&T)",                 ID_VIEW_TOOLBAR
+        MENUITEM "Zoom 도구모음(&Z)",               ID_VIEW_ZOOMTOOLBAR
+        MENUITEM "정렬 도구모음(&A)",                 ID_VIEW_ALIGNTOOLBAR
+        MENUITEM "도면 도구모음(&D)",                 ID_VIEW_DOMYUNBAR
+        MENUITEM "도면설정 도구모음(&D)",               ID_VIEW_PROPBAR
+        MENUITEM "편집 도구모음(&E)",                 ID_VIEW_EDIT
+        MENUITEM "OSNAP설정 도구모음(&O)",            ID_VIEW_OSNAPMODE
+        MENUITEM SEPARATOR
+        MENUITEM "일반입력 도구모음(&I)",               ID_VIEW_TOOLBAR_GENINPUT
+        MENUITEM "상세입력 도구모음(&S)",               ID_VIEW_TOOLBAR_DETAILINPUT
+        MENUITEM "계산입력 도구모음(&R)",               ID_VIEW_TOOLBAR_CALCINPUT
+        MENUITEM "배근입력 도구모음(&R)",               ID_VIEW_TOOLBAR_DECKINPUT
+        MENUITEM SEPARATOR
+        MENUITEM "명령행 표시줄(&C)",                 ID_VIEW_COMMAND
+        MENUITEM "페이지보기 표시줄(&P)",               ID_VIEW_PAGEBAR
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "사용자 편집(&E)",                  ID_VIEW_CUSTOM
+    END
+END
+
+IDR_POPUP_FEMZOOM MENU
+BEGIN
+    POPUP "Zoom"
+    BEGIN
+        MENUITEM "&All",                        ID_ZOOM_ALL
+        MENUITEM "&Window",                     ID_ZOOM_WINDOW
+        MENUITEM "&In",                         ID_ZOOM_IN
+        MENUITEM "&Out",                        ID_ZOOM_OUT
+        MENUITEM "&Move",                       ID_ZOOM_MOVE
+        MENUITEM SEPARATOR
+        MENUITEM "현재화면을 D&xf File로저장",          ID_DXF_OUT_CUR
+    END
+END
+
+IDR_POPUP_ALIGN MENU
+BEGIN
+    POPUP "Align"
+    BEGIN
+        MENUITEM "최상위로 (&T)",                   ID_RECT_TOP
+        MENUITEM "최하위로 (B)",                    ID_RECT_BOTTOM
+        MENUITEM "위치 동일적용 (&A)",                ID_ALIGN_APPLYALL
+        MENUITEM SEPARATOR
+        MENUITEM "영역 정보(&I)",                   ID_OBJECT_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &All",                   ID_ZOOM_ALL
+        MENUITEM "Zoom &Window",                ID_ZOOM_WINDOW
+        MENUITEM "Zoom &Dynaymic",              ID_ZOOM_DYNAMIC
+        MENUITEM "Zoom &In",                    ID_ZOOM_IN
+        MENUITEM "Zoom &Out",                   ID_ZOOM_OUT
+        MENUITEM "Zoom &Move",                  ID_ZOOM_MOVE
+        MENUITEM "Zoom &Realtime",              ID_ZOOM_REALTIME
+        MENUITEM "Zoom &Previous",              ID_ZOOM_PREVIOUS
+    END
+END
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                      ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",           ID_FILE_SAVE_AS
+        POPUP "내보내기"
+        BEGIN
+            MENUITEM "*.lin(선형파일)(&L)",             ID_OUT_LINE
+            MENUITEM "*.brx(AAbutPier2003)(&E)",    ID_EXPORT_BRX
+            MENUITEM "*.sbi(AAbutPier2007)(&P)",    ID_EXPORT_BRX2007
+            MENUITEM "*.btx(상부용정보파일)(&A)",          ID_EXPORT_TEXT
+        END
+        POPUP "가져오기"
+        BEGIN
+            MENUITEM "교량정보파일 가져오기(*.btx)(&A)",      ID_IMPORT_TEXT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄 미리보기(&V)",                 ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM "인쇄(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                      ID_APP_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        POPUP "도구 모음(&T)"
+        BEGIN
+            MENUITEM "표준",                          ID_VIEW_TOOLBAR
+        END
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "제어 상자(&C)",                   ID_VIEW_CONTROLPANE
+        MENUITEM "입력 상자(&I)",                   ID_VIEW_INPUTPANE
+        MENUITEM "주석 표시줄(&O)",                  ID_VIEW_COMMENT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "APlate2010 매뉴얼(&H)\tF1",      ID_HELP_PDF
+        MENUITEM SEPARATOR
+        MENUITEM "한길아이티 홈페이지(&O)",              ID_HELP_WEB_HOME
+        MENUITEM "APlate Q&&A 게시판(&Q)",         ID_HELP_WEB_FAQ
+        MENUITEM SEPARATOR
+        MENUITEM "업데이트 리스트 보기(&U)",             ID_UPDATE_LIST
+        MENUITEM "실시간 자동 업그레이드(&R)...",         ID_REALUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "APlate2010 정보(&A)",           ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Lock 인증키 발급",                 ID_32771
+    END
+END
+
+IDR_APLATETYPE_FULL MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            ID_APLATE_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                      ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",           ID_FILE_SAVE_AS
+        POPUP "내보내기"
+        BEGIN
+            MENUITEM "*.lin(선형파일)(&L)",             ID_OUT_LINE
+            MENUITEM "*.sbi(AAbutPier2007)(&P)",    ID_EXPORT_BRX2007
+            MENUITEM "*.btx(상부용정보파일)(&A)",          ID_EXPORT_TEXT
+        END
+        POPUP "가져오기"
+        BEGIN
+            MENUITEM "교량정보파일 가져오기(*.btx)(&A)",      ID_IMPORT_TEXT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄 미리 보기(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM "인쇄(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                      ID_APP_EXIT
+    END
+    POPUP "출력(&P)"
+    BEGIN
+        MENUITEM "강재집계표 출력(&W)",                ID_SHOPOUT_BILL
+        MENUITEM "도장집계표(&P)",                   ID_SHOPOUT_PAINT
+        MENUITEM "용접집계표 출력(&W)",                ID_SHOPOUT_WELD
+        MENUITEM SEPARATOR
+        MENUITEM "일반수량산출서 출력(&C)",              ID_OUT_BM
+        MENUITEM "비파괴검사서 출력(&N)",               ID_OUT_NONDES
+        MENUITEM "표준 제작 공수",                    ID_OUT_WELD_CHANGE
+        MENUITEM SEPARATOR
+        MENUITEM "구조계산서 출력(&A)",                ID_STRUCTURE_CALC
+        MENUITEM SEPARATOR
+        MENUITEM "도면 DXF 저장(&D)...",            ID_DXF_OUT
+        MENUITEM "도면 출력 환경 설정(&G)",             ID_OPTION
+        MENUITEM SEPARATOR
+        MENUITEM "페이지 영역 이전",                   ID_PAGEPART_PREV
+        MENUITEM "페이지 이전 처음",                   ID_PAGE_PREV_FIRST
+        MENUITEM "페이지 이전",                      ID_PAGE_PREV
+        MENUITEM "그리기",                         ID_PAGE_REDRAW
+        MENUITEM "페이지 다음",                      ID_PAGE_NEXT
+        MENUITEM "페이지 다음 마지막",                  ID_PAGE_NEXT_LAST
+        MENUITEM "페이지 영역 다음",                   ID_PAGEPART_NEXT
+    END
+    POPUP "도구(&T)"
+    BEGIN
+        POPUP "확대/축소 도구상자(&Z)"
+        BEGIN
+            MENUITEM "&Previous",                   ID_ZOOM_PREVIOUS
+            MENUITEM "&Window",                     ID_ZOOM_WINDOW
+            MENUITEM "&Dynamic",                    ID_ZOOM_DYNAMIC
+            MENUITEM "&In",                         ID_ZOOM_IN
+            MENUITEM "&Out",                        ID_ZOOM_OUT
+            MENUITEM "&All",                        ID_ZOOM_ALL
+            MENUITEM SEPARATOR
+            MENUITEM "&Realtime Zoom",              ID_ZOOM_REALTIME
+            MENUITEM "&Realtime Pan",               ID_ZOOM_MOVE
+            MENUITEM "거리 측정(&D)",                   ID_CALC_DIST
+            MENUITEM "오브젝트 정보(&N)",                 ID_OBJ_INFO
+        END
+        POPUP "그리기 설정 도구상자"
+        BEGIN
+            MENUITEM "레이어설정",                       ID_SET_LAYER
+            MENUITEM "치수설정",                        ID_SET_DIM
+            MENUITEM "폰트스타일 설정",                    ID_SET_FONT
+            MENUITEM "라인두께 설정",                     ID_SET_LINEWIDTH
+        END
+        POPUP "오스넵 설정 도구상자"
+        BEGIN
+            MENUITEM "EndPoint",                    ID_BUTTON_ENDPOINT
+            MENUITEM "PerPoint",                    ID_BUTTON_PERPOINT
+            MENUITEM "Near",                        ID_BUTTON_NEAR
+            MENUITEM "Node",                        ID_BUTTON_NODE
+            MENUITEM "MidPoint",                    ID_BUTTON_MIDPOINT
+            MENUITEM "CrossPoint",                  ID_BUTTON_CROSSPOINT
+            MENUITEM "CenPoint",                    ID_BUTTON_CENPOINT
+        END
+        POPUP "정렬 도구상자"
+        BEGIN
+            MENUITEM "왼쪽정렬",                        ID_ALIGN_LEFT
+            MENUITEM "오른쪽정렬",                       ID_ALIGN_RIGHT
+            MENUITEM "상단정렬",                        ID_ALIGN_TOP
+            MENUITEM "하단정렬",                        ID_ALIGN_BOTTOM
+            MENUITEM SEPARATOR
+            MENUITEM "수평정렬",                        ID_ALIGN_HORZ
+            MENUITEM "수직정렬",                        ID_ALIGN_VER
+            MENUITEM SEPARATOR
+            MENUITEM "수평 맞추기",                      ID_ATTACH_HORZ
+            MENUITEM "수직 맞추기",                      ID_ATTACH_VER
+            MENUITEM SEPARATOR
+            MENUITEM "페이지정렬",                       ID_ALGIN_ALL
+            MENUITEM "객체이동",                        ID_OBJ_MOVE
+        END
+        POPUP "도면 배치"
+        BEGIN
+            MENUITEM "이동 취소(&Z)",                   ID_MOVE_UNDO
+            MENUITEM "이동 복구(&Y)",                   ID_MOVE_REDO
+        END
+		POPUP "선형(&L)"
+        BEGIN
+            MENUITEM "거리 및 스테이션 계산(&S)...",         ID_CALC_STATION
+            MENUITEM "선형 정보 계산(&L)...",             ID_CALC_LINEINFO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "프로그램 환경설정...",                ID_OPT_PRG
+        MENUITEM "현재 화면을 DXF 파일로 저장(&S)...",    ID_DYN_OUTMODE_DXFSAVE
+        MENUITEM "ADManager로 보내기...",           ID_EXPORT_ADMANAGER
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        POPUP "도구 모음(&T)"
+        BEGIN
+            MENUITEM "표준",                          ID_VIEW_TOOLBAR
+        END
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "제어 상자(&C)",                   ID_VIEW_CONTROLPANE
+        MENUITEM "입력 상자(&I)",                   ID_VIEW_INPUTPANE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "<< APlate2010 사용설명서 >>",      ID_HELP_TEXT_APLATE
+        MENUITEM "일반입력 및 상세입력 부문",              ID_HELP_GEN_DETAIL
+        MENUITEM "계산입력 부문",                     ID_HELP_CALC
+        MENUITEM "배근도입력 부문",                    ID_HELP_REBAR
+        MENUITEM "출력 부문",                       ID_HELP_OUT
+        POPUP "단축키 리스트"
+        BEGIN
+            MENUITEM "A, E - Zoom All",             ID_HELP_TEXT_DUMMY
+            MENUITEM "M - Move",                    ID_HELP_TEXT_DUMMY
+            MENUITEM "P - Pan",                     ID_HELP_TEXT_DUMMY
+            MENUITEM "W - Zoom Window",             ID_HELP_TEXT_DUMMY
+            MENUITEM "D - Soom Dynamic",            ID_HELP_TEXT_DUMMY
+            MENUITEM "R - Zoom Realtime",           ID_HELP_TEXT_DUMMY
+            MENUITEM "I - Zoom In",                 ID_HELP_TEXT_DUMMY
+            MENUITEM "O - Zoom Out",                ID_HELP_TEXT_DUMMY
+            MENUITEM "S - Distance",                ID_HELP_TEXT_DUMMY
+            MENUITEM "Esc - 명령어 해제",                ID_HELP_TEXT_DUMMY
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "한길아이티 홈페이지(&O)",              ID_HELP_WEB_HOME
+        MENUITEM "APlate Q&&A 게시판(&Q)",         ID_HELP_WEB_FAQ
+        MENUITEM SEPARATOR
+        MENUITEM "<< 기타프로그램 사용설명서 >>",          ID_HELP_TEXT_ETC
+        MENUITEM "ALINE 사용설명서",                 ID_HELP_ALINE
+        MENUITEM "ABOARDER 사용설명서",              ID_HELP_ABOARDER
+        MENUITEM SEPARATOR
+        MENUITEM "업데이트 리스트 보기(&U)",             ID_UPDATE_LIST
+        MENUITEM "실시간 자동 업그레이드(&R)...",         ID_REALUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "APlate2010 정보(&A)",           ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Lock 인증키 발급",                 ID_32771
+    END
+END
+
+IDR_APLATETYPE_NOT_TU MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            ID_APLATE_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                      ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",           ID_FILE_SAVE_AS
+        POPUP "내보내기"
+        BEGIN
+            MENUITEM "*.lin(선형파일)(&L)",             ID_OUT_LINE
+            MENUITEM "*.sbi(AAbutPier2007)(&P)",    ID_EXPORT_BRX2007
+            MENUITEM "*.btx(상부용정보파일)(&A)",          ID_EXPORT_TEXT
+        END
+        POPUP "가져오기"
+        BEGIN
+            MENUITEM "교량정보파일 가져오기(*.btx)(&A)",      ID_IMPORT_TEXT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄 미리 보기(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM "인쇄(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                      ID_APP_EXIT
+    END
+    POPUP "출력(&P)"
+    BEGIN
+        MENUITEM "강재집계표 출력(&W)",                ID_SHOPOUT_BILL
+        MENUITEM "도장집계표(&P)",                   ID_SHOPOUT_PAINT
+        MENUITEM "용접집계표 출력(&W)",                ID_SHOPOUT_WELD
+        MENUITEM SEPARATOR
+        MENUITEM "일반수량산출서 출력(&C)",              ID_OUT_BM
+        MENUITEM "비파괴검사서 출력(&N)",               ID_OUT_NONDES
+        MENUITEM "표준 제작 공수",                    ID_OUT_WELD_CHANGE
+        MENUITEM SEPARATOR
+        MENUITEM "구조계산서 출력(&A)",                ID_STRUCTURE_CALC
+        MENUITEM SEPARATOR
+        MENUITEM "도면 DXF 저장(&D)...",            ID_DXF_OUT
+        MENUITEM "도면 출력 환경 설정(&G)",             ID_OPTION
+        MENUITEM SEPARATOR
+        MENUITEM "페이지 영역 이전",                   ID_PAGEPART_PREV
+        MENUITEM "페이지 이전 처음",                   ID_PAGE_PREV_FIRST
+        MENUITEM "페이지 이전",                      ID_PAGE_PREV
+        MENUITEM "그리기",                         ID_PAGE_REDRAW
+        MENUITEM "페이지 다음",                      ID_PAGE_NEXT
+        MENUITEM "페이지 다음 마지막",                  ID_PAGE_NEXT_LAST
+        MENUITEM "페이지 영역 다음",                   ID_PAGEPART_NEXT
+    END
+    POPUP "도구(&T)"
+    BEGIN
+        POPUP "확대/축소 도구상자(&Z)"
+        BEGIN
+            MENUITEM "&Previous",                   ID_ZOOM_PREVIOUS
+            MENUITEM "&Window",                     ID_ZOOM_WINDOW
+            MENUITEM "&Dynamic",                    ID_ZOOM_DYNAMIC
+            MENUITEM "&In",                         ID_ZOOM_IN
+            MENUITEM "&Out",                        ID_ZOOM_OUT
+            MENUITEM "&All",                        ID_ZOOM_ALL
+            MENUITEM SEPARATOR
+            MENUITEM "&Realtime Zoom",              ID_ZOOM_REALTIME
+            MENUITEM "&Realtime Pan",               ID_ZOOM_MOVE
+            MENUITEM "거리 측정(&D)",                   ID_CALC_DIST
+            MENUITEM "오브젝트 정보(&N)",                 ID_OBJ_INFO
+        END
+        POPUP "그리기 설정 도구상자"
+        BEGIN
+            MENUITEM "레이어설정",                       ID_SET_LAYER
+            MENUITEM "치수설정",                        ID_SET_DIM
+            MENUITEM "폰트스타일 설정",                    ID_SET_FONT
+            MENUITEM "라인두께 설정",                     ID_SET_LINEWIDTH
+        END
+        POPUP "오스넵 설정 도구상자"
+        BEGIN
+            MENUITEM "EndPoint",                    ID_BUTTON_ENDPOINT
+            MENUITEM "PerPoint",                    ID_BUTTON_PERPOINT
+            MENUITEM "Near",                        ID_BUTTON_NEAR
+            MENUITEM "Node",                        ID_BUTTON_NODE
+            MENUITEM "MidPoint",                    ID_BUTTON_MIDPOINT
+            MENUITEM "CrossPoint",                  ID_BUTTON_CROSSPOINT
+            MENUITEM "CenPoint",                    ID_BUTTON_CENPOINT
+        END
+        POPUP "정렬 도구상자"
+        BEGIN
+            MENUITEM "왼쪽정렬",                        ID_ALIGN_LEFT
+            MENUITEM "오른쪽정렬",                       ID_ALIGN_RIGHT
+            MENUITEM "상단정렬",                        ID_ALIGN_TOP
+            MENUITEM "하단정렬",                        ID_ALIGN_BOTTOM
+            MENUITEM SEPARATOR
+            MENUITEM "수평정렬",                        ID_ALIGN_HORZ
+            MENUITEM "수직정렬",                        ID_ALIGN_VER
+            MENUITEM SEPARATOR
+            MENUITEM "수평 맞추기",                      ID_ATTACH_HORZ
+            MENUITEM "수직 맞추기",                      ID_ATTACH_VER
+            MENUITEM SEPARATOR
+            MENUITEM "페이지정렬",                       ID_ALGIN_ALL
+            MENUITEM "객체이동",                        ID_OBJ_MOVE
+        END
+        POPUP "도면 배치"
+        BEGIN
+            MENUITEM "이동 취소(&Z)",                   ID_MOVE_UNDO
+            MENUITEM "이동 복구(&Y)",                   ID_MOVE_REDO
+        END
+        MENUITEM SEPARATOR
+        POPUP "도구모음"
+        BEGIN
+            MENUITEM "일반 도구모음(&T)",                 ID_VIEW_TOOLBAR
+            MENUITEM "Zoom 도구모음(&Z)",               ID_VIEW_ZOOMTOOLBAR
+            MENUITEM "정렬 도구모음(&A)",                 ID_VIEW_ALIGNTOOLBAR
+            MENUITEM "도면 도구모음(&D)",                 ID_VIEW_DOMYUNBAR
+            MENUITEM "도면설정 도구모음(&D)",               ID_VIEW_PROPBAR
+            MENUITEM "OSNAP설정 도구모음(&O)",            ID_VIEW_OSNAPMODE
+            MENUITEM SEPARATOR
+            MENUITEM "일반입력 도구모음(&I)",               ID_VIEW_TOOLBAR_GENINPUT
+            MENUITEM "상세입력 도구모음(&S)",               ID_VIEW_TOOLBAR_DETAILINPUT
+            MENUITEM "계산입력 도구모음(&R)",               ID_VIEW_TOOLBAR_CALCINPUT
+            MENUITEM "배근입력 도구모음(&R)",               ID_VIEW_TOOLBAR_DECKINPUT
+            MENUITEM SEPARATOR
+            MENUITEM "명령행 표시줄(&C)",                 ID_VIEW_COMMAND
+            MENUITEM "페이지보기 표시줄(&P)",               ID_VIEW_PAGEBAR
+            MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "툴바설정 (&B)",                   ID_VIEW_CUSTOM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "전체화면으로 작업(&A)",               ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "프로그램 환경설정...",                ID_OPT_PRG
+        MENUITEM "현재 화면을 DXF 파일로 저장(&S)...",    ID_DYN_OUTMODE_DXFSAVE
+        MENUITEM "ADManager로 보내기...",           ID_EXPORT_ADMANAGER
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        POPUP "도구 모음(&T)"
+        BEGIN
+            MENUITEM "표준",                          ID_VIEW_TOOLBAR
+        END
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "제어 상자(&C)",                   ID_VIEW_CONTROLPANE
+        MENUITEM "입력 상자(&I)",                   ID_VIEW_INPUTPANE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "<< APlate2010 사용설명서 >>",      ID_HELP_TEXT_APLATE
+        MENUITEM "일반입력 및 상세입력 부문",              ID_HELP_GEN_DETAIL
+        MENUITEM "계산입력 부문",                     ID_HELP_CALC
+        MENUITEM "배근도입력 부문",                    ID_HELP_REBAR
+        MENUITEM "출력 부문",                       ID_HELP_OUT
+        POPUP "단축키 리스트"
+        BEGIN
+            MENUITEM "A, E - Zoom All",             ID_HELP_TEXT_DUMMY
+            MENUITEM "M - Move",                    ID_HELP_TEXT_DUMMY
+            MENUITEM "P - Pan",                     ID_HELP_TEXT_DUMMY
+            MENUITEM "W - Zoom Window",             ID_HELP_TEXT_DUMMY
+            MENUITEM "D - Soom Dynamic",            ID_HELP_TEXT_DUMMY
+            MENUITEM "R - Zoom Realtime",           ID_HELP_TEXT_DUMMY
+            MENUITEM "I - Zoom In",                 ID_HELP_TEXT_DUMMY
+            MENUITEM "O - Zoom Out",                ID_HELP_TEXT_DUMMY
+            MENUITEM "S - Distance",                ID_HELP_TEXT_DUMMY
+            MENUITEM "Esc - 명령어 해제",                ID_HELP_TEXT_DUMMY
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "한길아이티 홈페이지(&O)",              ID_HELP_WEB_HOME
+        MENUITEM "APlate Q&&A 게시판(&Q)",         ID_HELP_WEB_FAQ
+        MENUITEM SEPARATOR
+        MENUITEM "<< 기타프로그램 사용설명서 >>",          ID_HELP_TEXT_ETC
+        MENUITEM "ALINE 사용설명서",                 ID_HELP_ALINE
+        MENUITEM "ABOARDER 사용설명서",              ID_HELP_ABOARDER
+        MENUITEM SEPARATOR
+        MENUITEM "업데이트 리스트 보기(&U)",             ID_UPDATE_LIST
+        MENUITEM "실시간 자동 업그레이드(&R)...",         ID_REALUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "APlate2010 정보(&A)",           ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Lock 인증키 발급",                 ID_VIEW_FULL_SCREEN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_ZOOM TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_ZOOM_ALL
+    BUTTON      ID_ZOOM_WINDOW
+    BUTTON      ID_ZOOM_PREVIOUS
+    BUTTON      ID_ZOOM_DYNAMIC
+    BUTTON      ID_ZOOM_IN
+    BUTTON      ID_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_ZOOM_REALTIME
+    BUTTON      ID_ZOOM_MOVE
+    SEPARATOR
+    BUTTON      ID_CALC_DIST
+    BUTTON      ID_OBJ_INFO
+END
+
+IDR_TOOLBAR_PROP TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_SET_LAYER
+    BUTTON      ID_SET_DIM
+    BUTTON      ID_SET_FONT
+    BUTTON      ID_SET_LINEWIDTH
+END
+
+IDR_TOOLBAR_OSNAP TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_BUTTON_ENDPOINT
+    BUTTON      ID_BUTTON_PERPOINT
+    BUTTON      ID_BUTTON_NEAR
+    BUTTON      ID_BUTTON_NODE
+    BUTTON      ID_BUTTON_MIDPOINT
+    BUTTON      ID_BUTTON_CROSSPOINT
+    SEPARATOR
+    BUTTON      ID_BUTTON_CENPOINT
+END
+
+IDR_TOOLBAR_GENINPUT TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_GNINPUT_0
+    BUTTON      ID_GNINPUT_1
+    BUTTON      ID_GNINPUT_2
+    BUTTON      ID_GNINPUT_3
+    BUTTON      ID_GNINPUT_4
+    BUTTON      ID_GNINPUT_5
+    BUTTON      ID_GNINPUT_6
+    BUTTON      ID_GNINPUT_7
+    BUTTON      ID_GNINPUT_8
+    BUTTON      ID_GNINPUT_9
+    SEPARATOR
+    BUTTON      ID_GNINPUT_10
+    BUTTON      ID_GNINPUT_11
+    BUTTON      ID_GNINPUT_12
+    BUTTON      ID_GNINPUT_13
+    BUTTON      ID_GNINPUT_14
+    SEPARATOR
+    BUTTON      ID_GNINPUT_15
+    BUTTON      ID_GNINPUT_16
+    SEPARATOR
+    BUTTON      ID_GNINPUT_17
+END
+
+IDR_TOOLBAR_DOMYUN TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_EDIT_PAGE
+    SEPARATOR
+    BUTTON      ID_COMBO_GOINDEX
+    BUTTON      ID_PAGE_REPOS
+    SEPARATOR
+    BUTTON      ID_PAGEPART_PREV
+    BUTTON      ID_PAGE_PREV_FIRST
+    BUTTON      ID_PAGE_PREV
+    BUTTON      ID_PAGE_REDRAW
+    BUTTON      ID_PAGE_NEXT
+    BUTTON      ID_PAGE_NEXT_LAST
+    BUTTON      ID_PAGEPART_NEXT
+    SEPARATOR
+    BUTTON      ID_INIT_DRAWPAGE
+    SEPARATOR
+    BUTTON      ID_INSERT_NOTE
+    BUTTON      ID_OPTION
+    SEPARATOR
+    BUTTON      ID_DXF_OUT
+    BUTTON      ID_STRUCTURE_CALC
+    BUTTON      ID_SHOPOUT_BILL
+    BUTTON      ID_SHOPOUT_PAINT
+    BUTTON      ID_SHOPOUT_WELD
+    SEPARATOR
+    BUTTON      ID_OUT_BM
+    BUTTON      ID_OUT_NONDES
+    BUTTON      ID_OUT_WELD_CHANGE
+END
+
+IDR_TOOLBAR_DETINPUT TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_DETINPUT_1
+    BUTTON      ID_DETINPUT_2
+    BUTTON      ID_DETINPUT_3
+    BUTTON      ID_DETINPUT_4
+    BUTTON      ID_DETINPUT_5
+    BUTTON      ID_DETINPUT_6
+    BUTTON      ID_DETINPUT_7
+    BUTTON      ID_DETINPUT_8
+    BUTTON      ID_DETINPUT_9
+END
+
+IDR_TOOLBAR_DECK_TU TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_DECK_1
+    BUTTON      ID_DECK_2
+    BUTTON      ID_DECK_3
+    BUTTON      ID_DECK_4
+    BUTTON      ID_DECK_5
+    BUTTON      ID_DECK_6
+    BUTTON      ID_DECK_7
+    BUTTON      ID_DECK_8
+    BUTTON      ID_DECK_9
+    BUTTON      ID_DECK_10
+    BUTTON      ID_DECK_11
+    BUTTON      ID_DECK_12
+    BUTTON      ID_DECK_13
+    BUTTON      ID_DECK_14
+    BUTTON      ID_DECK_15
+END
+
+IDR_TOOLBAR_DECK_GEN TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_DECK_1
+    BUTTON      ID_DECK_2
+    BUTTON      ID_DECK_3
+    BUTTON      ID_DECK_4
+    BUTTON      ID_DECK_5
+    BUTTON      ID_DECK_6
+    BUTTON      ID_DECK_7
+    BUTTON      ID_DECK_8
+    BUTTON      ID_DECK_10
+    BUTTON      ID_DECK_11
+    BUTTON      ID_DECK_12
+    BUTTON      ID_DECK_13
+    BUTTON      ID_DECK_14
+    BUTTON      ID_DECK_15
+END
+
+IDR_TOOLBAR_ALIGN TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_OBJ_MOVE
+    SEPARATOR
+    BUTTON      ID_ALIGN_LEFT
+    BUTTON      ID_ALIGN_CENTER
+    BUTTON      ID_ALIGN_RIGHT
+    BUTTON      ID_ALIGN_TOP
+    BUTTON      ID_ALIGN_VCENTER
+    BUTTON      ID_ALIGN_BOTTOM
+    SEPARATOR
+    BUTTON      ID_ALIGN_HORZ
+    BUTTON      ID_ALIGN_VER
+    SEPARATOR
+    BUTTON      ID_ATTACH_HORZ
+    BUTTON      ID_ATTACH_VER
+    SEPARATOR
+    BUTTON      ID_ALGIN_ALL
+END
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_APLATE_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_MOVE_UNDO
+    BUTTON      ID_MOVE_REDO
+END
+
+IDR_TOOLBAR_CALCINPUT TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_CLINPUT_1
+    BUTTON      ID_CLINPUT_2
+    BUTTON      ID_CLINPUT_3
+    BUTTON      ID_CLINPUT_4
+    BUTTON      ID_CLINPUT_5
+    BUTTON      ID_CLINPUT_6
+    BUTTON      ID_CLINPUT_7
+    BUTTON      ID_CLINPUT_8
+    BUTTON      ID_CLINPUT_9
+    BUTTON      ID_CLINPUT_10
+    BUTTON      ID_CLINPUT_11
+    BUTTON      ID_CLINPUT_12
+    BUTTON      ID_CLINPUT_13
+    BUTTON      ID_CLINPUT_14
+    BUTTON      ID_CLINPUT_15
+    BUTTON      ID_CLINPUT_16
+    BUTTON      ID_CLINPUT_17
+    BUTTON      ID_CLINPUT_18
+    BUTTON      ID_CLINPUT_19
+    BUTTON      ID_CLINPUT_20
+    BUTTON      ID_CLINPUT_21
+    BUTTON      ID_CLINPUT_22
+    BUTTON      ID_CLINPUT_23
+    BUTTON      ID_CLINPUT_24
+    BUTTON      ID_CLINPUT_25
+    BUTTON      ID_CLINPUT_26
+END
+
+IDR_TOOLBAR_LINE TOOLBAR 16, 16
+BEGIN
+	BUTTON		ID_CALC_STATION
+	BUTTON		ID_CALC_LINEINFO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "APlate MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "APlate"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "APlate2010.EXE"
+            VALUE "ProductName", "APlate 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "APlate2010"
+    ID_VIEW_TREEMENU        "트리형 메뉴보기\n트리메뉴"
+    ID_VIEW_PAGEBAR         "페이지보기 표시줄\n페이지 보기 줄 전환"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_APLATETYPE_FULL     "\nUntitled\nAPlate\nPlate 파일 (*.brp)\n.brp\nAPlate.Document\nAPlate Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "APlate2010"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_PROGRESS   " "
+    ID_INDICATOR_PAGENUM    " "
+    ID_INDICATOR_RIGHTANG   " "
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "쪽 전체를 표시합니다\n인쇄 미리 보기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+    ID_HELP                 "현재 작업 및 명령에 대한 도움말을 나타냅니다.\n도움말"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "현재 열린 문서를 위해 또 다른 창을 엽니다\n새 창"
+    ID_WINDOW_ARRANGE       "창 아래쪽에 아이콘을 정렬합니다\n아이콘 정렬"
+    ID_WINDOW_CASCADE       "서로 겹쳐지도록 창을 정렬합니다\n계단식 창"
+    ID_WINDOW_TILE_HORZ     "서로 겹치지 않는 바둑판 모양으로 창을 정렬합니다\n바둑판식 창"
+    ID_WINDOW_TILE_VERT     "서로 겹치지 않는 바둑판 모양으로 창을 정렬합니다\n바둑판식 창"
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "현재 좌표계 및 상태 표시줄을 보이거나 감춥니다.\n상태표시줄 전환"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_COMMAND         "Command 바를 보이거나 감춥니다\nCommand 바"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+    AFX_IDS_MDICHILD        "이 창을 활성화합니다"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+    ID_INDICATOR_VERSIONINFO "                             "
+    ID_TASKGROUP_FILEOPEN   "설계 문서 열기"
+    ID_TASKGROUP_FILENEW    "새로 만들기"
+    ID_TASKGROUP_SUPPORT    "고객 지원"
+    ID_TASKGROUP_VERSION_INFO "버전 정보"
+    ID_TASKITEM_FILENEW     "새 설계 문서"
+    ID_TASKITEM_FILEETC     "기타 설계 문서..."
+    ID_TASKITEM_HOME        "(주)한길아이티 홈 페이지"
+    ID_TASKITEM_QNA         "제품 관련 묻고 답하기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TASKITEM_UPDATE      "자동 업데이트 실행..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_APLATE_FILE_NEW      "새 문서를 작성합니다\n새 파일"
+    ID_DRAW_3DMODEL         "표준 제작 공수"
+    ID_VIEW_PAGEVIEW        "페이지탭 보기를 설정합니다\n페이지탭 보기"
+    ID_OUT_WELD_CHANGE      "표준 제작 공수"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PAGE_PREV            "이전 페이지로 이동합니다.\n이전 페이지"
+    ID_PAGE_NEXT            "다음 페이지로 이동합니다.\n다음 페이지"
+    ID_PAGE_REDRAW          "페이지를 새로 그립니다.\n새로 그리기"
+    ID_PAGEPART_NEXT        "페이지 다음 영역의 첫페이지로 이동합니다.\n페이지 다음영역"
+    ID_PAGEPART_PREV        "페이지 이전 영역의 첫페이지로 이동합니다.\n페이지 이전영역"
+    ID_PAGE_PREV_FIRST      "페이지 블럭 시작페이지로 이동합니다.\n페이지 블럭 시작페이지"
+    ID_PAGE_NEXT_LAST       "페이지 블럭 마지막페이지로 이동합니다.\n페이지 블럭 마지막페이지"
+    ID_ALGIN_ALL            "선택된 객체를 모든페이지에 동일하게 정렬합니다.\n페이지정렬"
+    ID_OBJ_MOVE             "선택된 객체를 이동시킵니다.\n객체이동"
+    ID_DXF_OUT              "도면을 생성 시킵니다\n도면 출력"
+    ID_INIT_DRAWPAGE        "도면 배치를 초기화 시킵니다\n도면배치 초기화"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SHORTCUT_START       "시작"
+    ID_SHORTCUT_INPUT       "입력"
+    ID_SHORTCUT_DRAWING     "도면"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MOVE_UNDO            "선택 객체 이동한 상태를 이전상태로 만듭니다\n이동 취소"
+    ID_MOVE_REDO            "선택 객체 이동취소를 다시 원래대로 만듭니다\n이동 복구"
+    ID_EXPORT_BRX           "AAbutPier 2003 Import 용 Brx 파일을 생성합니다\n Brx 파일 Export"
+    ID_VIEW_PAGEBAR_CHECK   "페이지 보기 줄을 전환합니다\n페이지보기 표시줄"
+    ID_VIEW_CMDBAR          "Command 바를 보이거나 감춥니다\nCommand 바"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ALIGN_LEFT           "선택된 도면을 좌측으로 정렬합니다\n좌측정렬"
+    ID_ALIGN_CENTER         "선택된 도면을 중앙으로 정렬합니다\n중앙정렬"
+    ID_ALIGN_RIGHT          "선택된 도면을 우측으로 정렬합니다\n우측정렬"
+    ID_ALIGN_TOP            "선택된 도면을 상단으로 정렬합니다\n상단정렬"
+    ID_ALIGN_VCENTER        "선택된 도면을 수직중앙으로 정렬합니다\n수직중앙정렬"
+    ID_ALIGN_BOTTOM         "선택된 도면을 하단으로 정렬합니다\n하단정렬"
+    ID_ALIGN_HORZ           "선택된 도면을 수평으로 등분배로 정렬합니다\n수평분배정렬"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ALIGN_VER            "선택된 도면을 수직으로 등분배로 정렬합니다\n수직분배정렬"
+    ID_ATTACH_HORZ          "수평으로 우측에 붙여서 정렬합니다.\n우측 붙이기정렬"
+    ID_ATTACH_VER           "수직으로 하단에 붙여서 정렬합니다.\n하단 붙이기정렬"
+END
+
+STRINGTABLE
+BEGIN
+    5147                    "선택된 도면을 중앙으로 정렬합니다\n중앙정렬"
+    5149                    "선택된 도면을 상단으로 정렬합니다\n상단정렬"
+    5151                    "선택된 도면을 하단으로 정렬합니다\n하단정렬"
+END
+
+STRINGTABLE
+BEGIN
+    5153                    "선택된 도면을 수직으로 등분배로 정렬합니다\n수직분배정렬"
+    5155                    "수직으로 하단에 붙여서 정렬합니다.\n하단 붙이기정렬"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SHOPOUT_BILL         "강재집계표 원하시는 부분별로 볼 수 있으며, 인쇄할 수 있습니다.\n강재집계표"
+    ID_SHOPOUT_WELD         "용접집계표의 원하시는 부분별로 볼 수 있으며, 인쇄할 수 있습니다.\n용접집계표"
+    ID_PAGE_REPOS           "페이지 순서를 설정합니다.\n페이지 순서 설정"
+    ID_INSERT_NOTE          "노트사항을 추가합니다\n노트추가"
+    ID_MENUITEM32858        "도면을 DXF 파일로 저장합니다\n도면 DXF 저장"
+    ID_PAGE_SLIDE           "페이지를 일정시간에 자동으로 넘어가는 슬라이드를 봅니다.\n슬라이드"
+    ID_PAGE_SLIDEOFF        "슬라이드 보기를 정지시킵니다.\n슬라이드 정지"
+    32862                   "객체를 이동합니다.\n객체이동"
+END
+
+STRINGTABLE
+BEGIN
+    ID_STRUCTURE_CALC       "구조계산서를 출력합니다.\n구조계산서 출력"
+    ID_SHOPOUT_PAINT        "도장집계표 원하시는 부분별로 볼 수 있으며, 인쇄할 수 있습니다.\n도장집계표"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GNINPUT_16           "공장이음위치를 입력합니다\n공장이음위치"
+    ID_GNINPUT_17           "슬래브제원을 입력합니다\n슬래브제원"
+    ID_DETINPUT_1           "교량받침, 스캘럽, 수평보강재, 단면변화부, 동바리 고리, 슬래브앵커, 전단연결재, 브라켓에 대한 상세값을 입력합니다\n기타 입력"
+    ID_DETINPUT_2           "각 현장이음에 대한 상세값을 입력합니다\n현장이음 상세"
+    ID_DETINPUT_3           "각 가로보에 대한 상세값을 입력합니다\n가로보 상세"
+    ID_DETINPUT_4           "각 수직브레이싱에 대한 상세값을 입력합니다\n수직브레이싱 상세"
+    ID_DETINPUT_5           "각 수평브레이싱에 대한 상세값을 입력합니다\n수평브레이싱상세"
+    ID_DETINPUT_6           "각 수직보강재에 대한 상세값을 입력합니다\n수직브레이싱상세"
+    ID_DETINPUT_7           "솟음량을 입력합니다\n솟음량 상세"
+    ID_DETINPUT_8           "수평보강재의 제원을 입력합니다\n수평보강재 제원상세"
+    ID_DETINPUT_9           "전단연결재의 종방향 위치를 입력합니다\n전단연결재 종방향위치상세"
+    ID_DETINPUT_10          "각 세로보에 대한 상세값을 입력합니다\n세로보 상세"
+    ID_CLINPUT_1            "설계조건을 확인합니다\n설계조건을 입력합니다"
+    ID_CLINPUT_2            "바닥판 설계 고려사항을 입력합니다\n바닥판 설계 고려사항"
+    ID_CLINPUT_3            "바닥판 고정하중을 계산합니다.\n바닥판 고정하중 계산"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CLINPUT_4            "바닥판 모델링을 합니다\n바닥판 모델링"
+    ID_CLINPUT_5            "바닥판 하중조합을 구성합니다\n바닥판 하중조합"
+    ID_CLINPUT_6            "바닥판 해석결과를 보여줍니다\n바닥판 해석결과"
+    ID_CLINPUT_7            "바닥판 작용하중을 보여줍니다\n바닥판 작용하중"
+    ID_CLINPUT_8            "프리스트레스 손실을 계산합니다\n프리스트레스 손실"
+    ID_CLINPUT_9            "바닥판슬래브의 응력을 검토합니다.\n바닥판 응력검토"
+    ID_CLINPUT_10           "철근량을 검토합니다\n철근량 검토"
+    ID_CLINPUT_11           "극한하중에 대하여 단면을 검토합니다.\n극한하중에 대한 단면검토"
+    ID_CLINPUT_12           "처짐 및 균열 검토합니다\n처짐 및 균열 검토"
+    ID_CLINPUT_13           "횡분배를 고려사항을 설정 합니다\n횡분배 고려사항 설정"
+    ID_CLINPUT_14           "횡방향 하중분배를 합니다\n횡방향 하중분배 하중분배"
+    ID_CLINPUT_15           "횡방향 하중분배 결과를 보여줍니다\n횡방향 하중분배 결과"
+    ID_CLINPUT_16           "풍하중을 계산합니다.\n풍하중 계산"
+    ID_CLINPUT_17           "모델링 고려사항을 입력합니다\n모델링 고려사항"
+    ID_CLINPUT_18           "모델링 하중조합을 구성합니다.\n모델링 하중조합"
+    ID_CLINPUT_19           "3D Frame  해석결과를 보여줍니다\n 3D Frame  해석결과"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CLINPUT_20           "영향계수를 검토합니다\n영향계수 검토"
+    ID_CLINPUT_21           "단면응력검토를 보여줍니다\n단면응력"
+    ID_CLINPUT_22           "단면요약도를 보여줍니다\n단면요약도"
+    ID_CLINPUT_23           "뒴비틀림검토를 보여줍니다\n뒴비틀림 검토"
+    ID_CLINPUT_24           "처짐량검토를 보여줍니다\n처짐량검토"
+    ID_CLINPUT_25           "피로응력검토를 보여줍니다\n피로응력 검토"
+    ID_CLINPUT_26           "용접검토를 보여줍니다\n용접 검토"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OPTION               "도면의 세부환경을 설정합니다.\n도면 출력 환경 설정"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ZOOM_ALL             "모든 도면을 화면에 알맞게 보여줍니다.\nAll"
+    ID_ZOOM_WINDOW          "화면에서 원하는 부분만 보여줍니다.\nWindow"
+    ID_ZOOM_IN              "현재 화면의 도면을 확대하여 보여줍니다.\n확대"
+    ID_ZOOM_OUT             "현재 화면을 축소하여 보여줍니다.\n축소"
+    ID_ZOOM_MOVE            "현재 화면 뷰 포트를 이동합니다.\n화면이동"
+    ID_ZOOM_PREVIOUS        "이전 화면을 보여줍니다.\n이전화면"
+    ID_ZOOM_REALTIME        "화면을 실시간으로 확대 축소합니다.\nZoom Realtime"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ZOOM_DYNAMIC         "선택영역을 확대하여 보여줍니다.\n선택영역확대"
+    ID_CALC_DIST            "두점 간의 거리를 측정합니다.\n거리측정"
+    ID_OBJ_INFO             "객체에 대한 정보를 표시합니다\n객체정보"
+END
+
+STRINGTABLE
+BEGIN
+    ID_UPDATE_LIST          "업데이트 리스트 보기\n업데이트 리스트 보기"
+    ID_IMPORT_BRX           "ARoad Export 용 Brx 파일정보를 읽어옵니다.\n Brx 파일 Import"
+    ID_BUTTON_NODE          "포인터를 선택합니다.\n포인터"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUTTON_ENDPOINT      "시종점을 선택합니다.\n시종점"
+    ID_BUTTON_MIDPOINT      "중간점을 선택합니다.\n중간점"
+    ID_BUTTON_CROSSPOINT    "교차점을 선택합니다.\n교차점"
+    ID_BUTTON_CENPOINT      "원의 중앙을 선택합니다.\n원중앙"
+    ID_BUTTON_PERPOINT      "수직점을 선택합니다.\n수직점"
+    ID_BUTTON_NEAR          "근접점을 선택합니다.\n근접점"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SET_LAYER            "레이어를 설정합니다\n레이어설정"
+    ID_SET_DIM              "치수선 형식을 설정합니다.\n치수설정"
+    ID_SET_FONT             "폰트 스타일을 설정합니다.\n폰트스타일 설정"
+    ID_SET_LINEWIDTH        "출력될 라인의 두께를 설정합니다.\n라인두께 설정"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GNINPUT_0            "선형파일읽기\n선형파일읽기"
+    ID_GNINPUT_1            "기초설정을 입력합니다\n기초설정"
+    ID_GNINPUT_2            "교량시점 및 연장을 입력합니다\n교량시점 및 연장"
+    ID_GNINPUT_3            "횡단구성 및 거더높이를 입력합니다\n횡단구성 및 거더높이"
+    ID_GNINPUT_4            "지간구성을 입력합니다\n지간구성"
+    ID_GNINPUT_5            "지점각도를 입력합니다\n지점각도"
+    ID_GNINPUT_6            "잭업보강재 위치를 입력합니다\n잭업보강재 위치"
+    ID_GNINPUT_7            "지점보강재 위치를 입력합니다\n지점보강재 위치"
+    ID_GNINPUT_8            "시종점부제원을 입력합니다\n시종점부제원"
+    ID_GNINPUT_9            "변단면제원을 입력합니다\n변단면제원"
+    ID_GNINPUT_10           "가로보 및 수직브레이싱 위치를 입력합니다\n가로보 및 수직브레이싱 위치"
+    ID_GNINPUT_11           "수직보강재위치를 입력합니다\n수직보강재위치"
+    ID_GNINPUT_12           "수평브레이싱위치를 입력합니다\n수평브레이싱위치"
+    ID_GNINPUT_13           "수평보강재위치를 입력합니다\n수평보강재위치"
+    ID_GNINPUT_14           "단면타입설정을 입력합니다\n단면타입 설정"
+    ID_GNINPUT_15           "현장이음위치를 입력합니다\n현장이음위치"
+END
+
+STRINGTABLE
+BEGIN
+    ID_HELP_WEB_ONLINE      "웹에서 계속적인 온라인 지원 도움말을 볼 수 있습니다.\n온라인 지원 도움말"
+    ID_HELP_WEB_FAQ         "웹에서 자주 나오는 질문들을 볼 수 있습니다.\n자주 나오는 질문"
+    ID_HELP_WEB_PRODUCT     "웹에서 최신의 제품 소식들을 봅니다.\n제품소식"
+    ID_HELP_WEB_HOME        "ARoad S/W의 홈페이지로 접속합니다.\nARoad 홈페이지 접속"
+    ID_HELP_WEB_SEND        "웹에서 사용자가 여러 의견들을 보낼 수 있습니다.\n사용자 의견 보내기"
+    ID_HELP_WEB_DOWNLOAD    "웹에서 최신의 S/W를 업그레이드 합니다.\n최신 업그레이드 파일 받기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OUT_NONDES           "비파괴검사서 출력"
+    ID_OUT_BM               "일반수량산출서 출력"
+    ID_EXPORT_BRX2007       "AAbutPier 2007 Import 용 Brx 파일을 생성합니다\n Brx 파일 Export"
+END
+
+STRINGTABLE
+BEGIN
+	ID_CALC_STATION         "거리 및 스테이션 계산\n거리 및 스테이션 계산"
+    ID_CALC_LINEINFO        "선형 정보 계산\n선형 정보 계산"
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\APlate.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

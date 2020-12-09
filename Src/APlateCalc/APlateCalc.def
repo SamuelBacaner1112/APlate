@@ -1,0 +1,6 @@
+; APlateCalc.def : Declares the module parameters for the DLL.
+
+LIBRARY      "APlateCalc"
+;DESCRIPTION  'APlateCalc Windows Dynamic Link Library'
+
+EXPORTS

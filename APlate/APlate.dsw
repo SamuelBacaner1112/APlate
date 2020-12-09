@@ -1,0 +1,164 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "APlate"=.\APlate.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name APlateUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name APlateOutBM
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "APlateCalc"=..\Src\APlateCalc\APlateCalc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name APlateDBDraw
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "APlateDBDraw"=..\Src\APlateDBDraw\APlateDBDraw.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Gangje
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "APlateData"=..\Src\APlateData\APlateData.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "APlateDraw"=..\Src\APlateDraw\APlateDraw.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name GeneralInput
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "APlateOutBM"=..\Src\APlateOutBM\APlateOutBM.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "APlateOutCalc"=..\Src\APlateOutCalc\APlateOutCalc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name APlateDraw
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "APlateUI"=..\Src\APlateUI\APlateUI.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name APlateOutCalc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Gangje"=..\Src\PlateGangje\PlateGangje.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name APlateData
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GeneralInput"=..\Src\GeneralInput\GeneralInput.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name APlateCalc
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
